@@ -1,0 +1,39 @@
+generated: '2026-08-25'
+method: probed
+source: >-
+  Live unauthenticated GET of each /.well-known/ path against the Li Industries website host
+  (www.li-ind.com), the only host this company operates — apis.yml declares no APIs and no API
+  subdomain resolves (api., developer., docs., app., portal. all NXDOMAIN). Every path returned
+  404. Recorded as a measured absence; no WellKnown or SecurityTxt pointer is emitted because no
+  path returned a document.
+note: >-
+  www.li-ind.com is a Webflow-hosted marketing site. Requests under /.well-known/ return a Webflow
+  404 body reading "Invalid .well-known request" — a genuine 404, not an SPA catch-all serving 200
+  HTML. No document was served on any probed path.
+hosts:
+- host: www.li-ind.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null

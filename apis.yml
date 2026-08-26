@@ -1,8 +1,19 @@
 aid: li-industries
 name: Li Industries
-description: 'Li Industries is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Li Industries is a critical battery materials company developing next-generation
+  lithium-ion battery recycling and closed-loop materials production technology. Its patented
+  direct recycling process separates and purifies electrode components from spent lithium-ion
+  batteries — including lithium iron phosphate (LFP) chemistries — to produce commercial-grade
+  cathode active material without the environmental cost and poor economics of conventional
+  smelting or hydrometallurgical routes. The company serves battery manufacturers, cathode
+  producers, recyclers and battery collection operations, and in 2024 was selected for a $55
+  million U.S. Department of Energy award under the Bipartisan Infrastructure Law to advance
+  closed-loop LFP recycling and manufacturing. Li Industries is headquartered in Pineville,
+  North Carolina, with an engineering center in Charlotte, North Carolina and an R&D center in
+  Blacksburg, Virginia. It is a materials and manufacturing company: it ships physical battery
+  material, not software, and publishes no public API, SDK or developer program.'
 url: https://raw.githubusercontent.com/api-evangelist/li-industries/refs/heads/main/apis.yml
+image: https://cdn.prod.website-files.com/5fa2f1a99eac342b40a20eef/5fa2f3238dff3b97b7849b80_logo_li_Industries%20copy.png
 x-type: company
 x-source: harvest:secondary-market
 x-tier: stub
@@ -12,6 +23,13 @@ created: '2026-08-25'
 modified: '2026-08-25'
 tags:
 - Company
+- Battery Recycling
+- Lithium-Ion Batteries
+- Battery Materials
+- Cathode Active Material
+- Circular Economy
+- Clean Energy
+- Advanced Manufacturing
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +37,43 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/li-industries-domain-security.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://www.li-ind.com/
+- type: About
+  url: https://www.li-ind.com/about-us
+- type: Blog
+  url: https://www.li-ind.com/press
+- type: Careers
+  url: https://www.li-ind.com/careers
+- type: Team
+  url: https://www.li-ind.com/team
+- type: LinkedIn
+  url: https://www.linkedin.com/company/li-industries
+x-enrichment:
+  date: '2026-08-25'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: >-
+    Li Industries manufactures physical lithium-ion battery cathode material and recycling
+    equipment — its entire public web presence is an 8-URL Webflow marketing site (home, about,
+    careers, team, press, two press posts and one job listing, per its own sitemap.xml) with no
+    developer, docs or API page, no GitHub organization, and no api/developer/docs/app/portal
+    subdomain in DNS.
+  evidence:
+  - url: https://www.li-ind.com/sitemap.xml
+    status: 200
+  - url: https://www.li-ind.com/openapi.json
+    status: 404
+  - url: https://www.li-ind.com/.well-known/agent-card.json
+    status: 404
+  - url: https://www.li-ind.com/llms.txt
+    status: 404
+  - url: https://api.github.com/orgs/li-industries
+    status: 404
+  checked: '2026-08-25'
