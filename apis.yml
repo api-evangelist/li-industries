@@ -13,6 +13,17 @@ description: 'Li Industries is a critical battery materials company developing n
   Blacksburg, Virginia. It is a materials and manufacturing company: it ships physical battery
   material, not software, and publishes no public API, SDK or developer program.'
 url: https://raw.githubusercontent.com/api-evangelist/li-industries/refs/heads/main/apis.yml
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 image: https://cdn.prod.website-files.com/5fa2f1a99eac342b40a20eef/5fa2f3238dff3b97b7849b80_logo_li_Industries%20copy.png
 x-type: company
 x-source: harvest:secondary-market
