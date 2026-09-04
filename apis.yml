@@ -24,6 +24,18 @@ deliveryModel:
   - none
   generated: '2026-08-28'
   method: derived
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source:
+  - security
+  generated: '2026-09-02'
+  method: derived
 image: https://cdn.prod.website-files.com/5fa2f1a99eac342b40a20eef/5fa2f3238dff3b97b7849b80_logo_li_Industries%20copy.png
 x-type: company
 x-source: harvest:secondary-market
